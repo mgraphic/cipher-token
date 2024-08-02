@@ -9,7 +9,7 @@
     "dist"
   ],
   "repository": {
-    "url": ""
+    "url": "https://github.com/mgraphic/cipher-token"
   },
   "scripts": {
     "e2e": "ts-node ./e2e.ts",
@@ -19,7 +19,9 @@
     "test:coverage": "jest --updateSnapshot --coverage"
   },
   "keywords": [
-    "encryption"
+    "encryption",
+    "decryption",
+    "crypto"
   ],
   "author": "Keith Marshall <keith@kmarshall.com>",
   "license": "MIT",
