@@ -1,0 +1,30 @@
+# project resources
+/.env
+/.env.*
+/.git
+/.gitignore
+/.prettierignore
+/.prettierrc.json
+/demo
+/e2e.ts
+/jest.config.js
+/package-lock.json
+/README.md
+/src
+/test
+/tsconfig.json
+/tsup.config.ts
+
+# system resources
+.DS_Store
+/.vscode
+npm-debug.log*
+pnpm-debug.log*
+pnpm-lock.yaml
+turbo-lint.log
+yarn-debug.log*
+yarn-error.log*
+
+# app resources
+/coverage
+/node_modules
