@@ -41,3 +41,4 @@ console.log('Decrypted:', decrypted);
 ```
 
 <!-- NPM Publish: https://zellwk.com/blog/publish-to-npm/ -->
+<!-- npx np -->
