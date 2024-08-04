@@ -5,6 +5,7 @@
 /.gitignore
 /.prettierignore
 /.prettierrc.json
+/.cipher-token-logo.png
 /demo
 /e2e.ts
 /jest.config.js

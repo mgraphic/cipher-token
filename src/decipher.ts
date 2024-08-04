@@ -2,7 +2,18 @@ import { DecipherGCM, createDecipheriv } from 'crypto';
 import { AbstractBaseClass } from './_base';
 import { CipherEncryptionObject, CipherKey } from './model';
 
+/**
+ * Decipher token
+ * @class DecipherToken
+ * @extends {AbstractBaseClass}
+ */
 export class DecipherToken extends AbstractBaseClass {
+  /**
+   * Untokenize token
+   * @param {string} token
+   * @param {CipherKey} [key]
+   * @returns {string}
+   */
   untokenize(token: string, key?: CipherKey): string {
     let cipherEncryptionObject: CipherEncryptionObject;
 
@@ -38,6 +49,12 @@ export class DecipherToken extends AbstractBaseClass {
     return this.decipher(cipherEncryptionObject, key);
   }
 
+  /**
+   * Decipher data
+   * @param {CipherEncryptionObject} cipherEncryptionObject
+   * @param {CipherKey} [key]
+   * @returns {string}
+   */
   decipher(cipherObject: CipherEncryptionObject, key?: any): string {
     key = key || this.key;
 

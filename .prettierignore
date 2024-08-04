@@ -17,4 +17,5 @@ yarn-error.log*
 # app resources
 /coverage
 /dist
+/docs
 /node_modules

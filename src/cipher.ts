@@ -2,7 +2,18 @@ import { randomBytes, CipherGCM, createCipheriv } from 'crypto';
 import { AbstractBaseClass } from './_base';
 import { CipherEncryptionObject, CipherKey } from './model';
 
+/**
+ * Cipher token
+ * @class CipherToken
+ * @extends {AbstractBaseClass}
+ */
 export class CipherToken extends AbstractBaseClass {
+  /**
+   * Generate token
+   * @param {string} data
+   * @param {CipherKey} [key]
+   * @returns {string}
+   */
   tokenize(data: string, key?: CipherKey): string {
     const cipherEncryptionObject = JSON.stringify(this.cipher(data, key));
 
@@ -12,6 +23,12 @@ export class CipherToken extends AbstractBaseClass {
     ).toString(this.config.tokenEncoding);
   }
 
+  /**
+   * Cipher data
+   * @param {string} data
+   * @param {CipherKey} [key]
+   * @returns {CipherEncryptionObject}
+   */
   cipher(data: string, key?: CipherKey): CipherEncryptionObject {
     key = key || this.key;
 

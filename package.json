@@ -16,7 +16,8 @@
     "build": "npm run test:coverage && npm run e2e && tsup",
     "test": "npm run test:coverage",
     "test:watch": "jest --updateSnapshot --watchAll",
-    "test:coverage": "jest --updateSnapshot --coverage"
+    "test:coverage": "jest --updateSnapshot --coverage",
+    "typedoc": "typedoc --plugin typedoc-plugin-markdown --entryPoints src --out docs"
   },
   "keywords": [
     "encryption",
@@ -33,6 +34,8 @@
     "ts-jest": "^29.2.3",
     "ts-node": "^10.9.2",
     "tsup": "^8.2.3",
+    "typedoc": "^0.26.5",
+    "typedoc-plugin-markdown": "^4.2.3",
     "typescript": "^5.5.4"
   }
 }
