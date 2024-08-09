@@ -13,7 +13,9 @@
   },
   "scripts": {
     "e2e": "ts-node ./e2e.ts",
-    "build": "npm run test:coverage && npm run e2e && tsup",
+    "prebuild": "npm ci && npm run test:coverage && npm run e2e",
+    "build": "tsup",
+    "postbuild": "npm run typedoc",
     "test": "npm run test:coverage",
     "test:watch": "jest --updateSnapshot --watchAll",
     "test:coverage": "jest --updateSnapshot --coverage",

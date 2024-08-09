@@ -67,8 +67,11 @@ export class DecipherToken extends AbstractBaseClass {
     decipher.setAuthTag(Buffer.from(cipherObject.tag, this.config.tagEncoding));
 
     return (
-      decipher.update(cipherObject.encrypted, this.config.encryptionEncoding) +
-      decipher.final(this.config.textEncoding)
+      decipher.update(
+        cipherObject.encrypted,
+        this.config.encryptionEncoding,
+        this.config.textEncoding
+      ) + decipher.final(this.config.textEncoding)
     );
   }
 }
