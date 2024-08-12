@@ -6,8 +6,13 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "docs",
+    "README.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "url": "https://github.com/mgraphic/cipher-token"
   },
