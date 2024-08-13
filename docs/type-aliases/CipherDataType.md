@@ -10,4 +10,4 @@
 
 ## Defined in
 
-[model.ts:15](https://github.com/mgraphic/cipher-token/blob/889192861d364587ebc3a064e78745c249ead5c3/src/model.ts#L15)
+[model.ts:15](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/model.ts#L15)

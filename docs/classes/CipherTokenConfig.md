@@ -32,7 +32,7 @@ The cipher algorithm to use to encrypt/decrypt the token.
 
 #### Defined in
 
-[config.ts:11](https://github.com/mgraphic/cipher-token/blob/889192861d364587ebc3a064e78745c249ead5c3/src/config.ts#L11)
+[config.ts:11](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/config.ts#L11)
 
 ***
 
@@ -50,7 +50,7 @@ The encoding to use for encryption.
 
 #### Defined in
 
-[config.ts:25](https://github.com/mgraphic/cipher-token/blob/889192861d364587ebc3a064e78745c249ead5c3/src/config.ts#L25)
+[config.ts:25](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/config.ts#L25)
 
 ***
 
@@ -68,7 +68,7 @@ The hash algorithm to use to generate the key.
 
 #### Defined in
 
-[config.ts:17](https://github.com/mgraphic/cipher-token/blob/889192861d364587ebc3a064e78745c249ead5c3/src/config.ts#L17)
+[config.ts:17](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/config.ts#L17)
 
 ***
 
@@ -86,7 +86,7 @@ The length of the key in bytes.
 
 #### Defined in
 
-[config.ts:57](https://github.com/mgraphic/cipher-token/blob/889192861d364587ebc3a064e78745c249ead5c3/src/config.ts#L57)
+[config.ts:57](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/config.ts#L57)
 
 ***
 
@@ -104,7 +104,7 @@ The length of the salt in bytes.
 
 #### Defined in
 
-[config.ts:63](https://github.com/mgraphic/cipher-token/blob/889192861d364587ebc3a064e78745c249ead5c3/src/config.ts#L63)
+[config.ts:63](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/config.ts#L63)
 
 ***
 
@@ -122,7 +122,7 @@ The encoding to use for the salt.
 
 #### Defined in
 
-[config.ts:31](https://github.com/mgraphic/cipher-token/blob/889192861d364587ebc3a064e78745c249ead5c3/src/config.ts#L31)
+[config.ts:31](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/config.ts#L31)
 
 ***
 
@@ -140,7 +140,7 @@ The encoding to use for the tag.
 
 #### Defined in
 
-[config.ts:37](https://github.com/mgraphic/cipher-token/blob/889192861d364587ebc3a064e78745c249ead5c3/src/config.ts#L37)
+[config.ts:37](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/config.ts#L37)
 
 ***
 
@@ -158,7 +158,7 @@ The encoding to use for plaintext.
 
 #### Defined in
 
-[config.ts:43](https://github.com/mgraphic/cipher-token/blob/889192861d364587ebc3a064e78745c249ead5c3/src/config.ts#L43)
+[config.ts:43](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/config.ts#L43)
 
 ***
 
@@ -176,4 +176,4 @@ The encoding to use for the token.
 
 #### Defined in
 
-[config.ts:49](https://github.com/mgraphic/cipher-token/blob/889192861d364587ebc3a064e78745c249ead5c3/src/config.ts#L49)
+[config.ts:49](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/config.ts#L49)

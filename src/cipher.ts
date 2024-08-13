@@ -44,12 +44,10 @@ export class CipherToken extends AbstractBaseClass {
       key,
       salt
     );
-    const encrypted =
-      cipher.update(
-        data,
-        this.config.textEncoding,
-        this.config.encryptionEncoding
-      ) + cipher.final(this.config.encryptionEncoding);
+    const encrypted = Buffer.concat([
+      cipher.update(Buffer.from(data, this.config.textEncoding)),
+      cipher.final(),
+    ]).toString(this.config.encryptionEncoding);
     const tag = cipher.getAuthTag().toString(this.config.tagEncoding);
 
     return { encrypted, salt, tag };

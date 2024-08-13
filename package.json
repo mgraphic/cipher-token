@@ -18,7 +18,7 @@
   },
   "scripts": {
     "e2e": "ts-node ./e2e.ts",
-    "prebuild": "npm ci && npm run test:coverage && npm run e2e",
+    "prebuild": "npm run test:coverage && npm run e2e",
     "build": "tsup",
     "postbuild": "npm run typedoc",
     "test": "npm run test:coverage",
