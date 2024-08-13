@@ -14,7 +14,7 @@
     "access": "public"
   },
   "repository": {
-    "url": "https://github.com/mgraphic/cipher-token"
+    "url": "git+https://github.com/mgraphic/cipher-token.git"
   },
   "scripts": {
     "e2e": "ts-node ./e2e.ts",
