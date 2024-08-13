@@ -6,6 +6,6 @@
     "start": "node ./index.js"
   },
   "dependencies": {
-    "@mgraphic/cipher-token": "^0.0.2"
+    "@mgraphic/cipher-token": "^0.0.6"
   }
 }
