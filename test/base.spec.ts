@@ -27,14 +27,6 @@ describe('AbstractBaseClass', () => {
     jest.clearAllMocks();
   });
 
-  it('should generate random key', () => {
-    const key = abstractBaseClass.generateRandomKey();
-    expect(key).toBeDefined();
-    expect(key).toHaveLength(32);
-    expect(key).toEqual('00112233445566778899aabbccddeeff');
-    expect(crypto.randomBytes).toHaveBeenCalled();
-  });
-
   it('should generate key from buffer', () => {
     const key = abstractBaseClass.keyFromBuffer(
       Buffer.from('00112233445566778899aabbccddeeff')

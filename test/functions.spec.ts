@@ -1,4 +1,8 @@
-import { getCipherToken, getDecipherToken } from '../src/functions';
+import {
+  generateRandomString,
+  getCipherToken,
+  getDecipherToken,
+} from '../src/functions';
 
 describe('functions', () => {
   it('should be defined', () => {
@@ -13,7 +17,6 @@ describe('functions', () => {
     expect(cipherToken).toHaveProperty('cipher');
     expect(cipherToken).toHaveProperty('keyFromString');
     expect(cipherToken).toHaveProperty('keyFromBuffer');
-    expect(cipherToken).toHaveProperty('generateRandomKey');
   });
 
   it('should get decipher token', () => {
@@ -21,5 +24,10 @@ describe('functions', () => {
     expect(decipherToken).toBeDefined();
     expect(decipherToken).toHaveProperty('untokenize');
     expect(decipherToken).toHaveProperty('decipher');
+  });
+
+  it('should generate random key', () => {
+    const key = generateRandomString();
+    expect(key).toHaveLength(64);
   });
 });

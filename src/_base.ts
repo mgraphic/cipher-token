@@ -1,4 +1,4 @@
-import { BinaryLike, createHash, randomBytes, scryptSync } from 'crypto';
+import { BinaryLike, createHash, scryptSync } from 'crypto';
 import { RequireAtLeastOne } from './_utils';
 import { CipherTokenConfig } from './config';
 import { CipherKey, DEFAULT_CT_CONFIG } from './model';
@@ -29,17 +29,6 @@ export abstract class AbstractBaseClass {
     this.config = newConfig
       ? { ...newConfig, ...DEFAULT_CT_CONFIG }
       : DEFAULT_CT_CONFIG;
-  }
-
-  /**
-   * Generate random key
-   * @returns {CipherKey}
-   * @memberof AbstractBaseClass
-   */
-  generateRandomKey(): CipherKey {
-    this.key = randomBytes(this.config.keyLength);
-
-    return this.key;
   }
 
   /**

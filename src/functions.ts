@@ -1,3 +1,4 @@
+import { randomBytes } from 'crypto';
 import { CipherToken } from './cipher';
 import { CipherTokenConfig } from './config';
 import { DecipherToken } from './decipher';
@@ -18,4 +19,13 @@ export function getCipherToken(newConfig?: CipherTokenConfig): CipherToken {
  */
 export function getDecipherToken(newConfig?: CipherTokenConfig): DecipherToken {
   return new DecipherToken(newConfig);
+}
+
+/**
+ * Generate random string
+ * @param {number} [byteSize=32]
+ * @returns {string}
+ */
+export function generateRandomString(byteSize = 32): string {
+  return randomBytes(byteSize).toString('hex');
 }

@@ -20,4 +20,4 @@ Get decipher token class
 
 ## Defined in
 
-[functions.ts:19](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/functions.ts#L19)
+[functions.ts:20](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/functions.ts#L20)

@@ -20,4 +20,4 @@ Get cipher token class
 
 ## Defined in
 
-[functions.ts:10](https://github.com/mgraphic/cipher-token/blob/85f4f780e6a46dc4ef97b9915abc040604b15025/src/functions.ts#L10)
+[functions.ts:11](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/functions.ts#L11)

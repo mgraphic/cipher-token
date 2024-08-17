@@ -22,5 +22,6 @@
 
 ## Functions
 
+- [generateRandomString](functions/generateRandomString.md)
 - [getCipherToken](functions/getCipherToken.md)
 - [getDecipherToken](functions/getDecipherToken.md)

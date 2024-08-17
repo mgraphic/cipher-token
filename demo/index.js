@@ -1,4 +1,8 @@
-const { getCipherToken, getDecipherToken } = require('@mgraphic/cipher-token');
+const {
+  getCipherToken,
+  getDecipherToken,
+  generateRandomString,
+} = require('@mgraphic/cipher-token');
 
 const cformatReset = '\x1b[0m';
 const cformatTitle = `\x1b[45m%s${cformatReset}`;
@@ -90,8 +94,9 @@ const demo = async () => {
 
     //   Encrypt:
     console.log(cformatComment, '## Encrypted Text');
+    const key = generateRandomString();
     const cipherToken = getCipherToken();
-    const key = cipherToken.generateRandomKey();
+    cipherToken.keyFromString(key);
     const token = cipherToken.tokenize(
       'Secret Text encrypted by a random bytes key'
     );
@@ -100,7 +105,8 @@ const demo = async () => {
     //   Decrypt:
     console.log(cformatComment, '## Decrypted Text');
     const decipherToken = getDecipherToken();
-    const decrypted = decipherToken.untokenize(token, key);
+    decipherToken.keyFromString(key);
+    const decrypted = decipherToken.untokenize(token);
     console.log(cformatResult, 'Decrypted', ': ', decrypted);
 
     console.log('\n');
