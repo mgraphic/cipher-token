@@ -23,7 +23,8 @@ export class DecipherToken extends AbstractBaseClass {
           this.config.textEncoding
         )
       );
-    } catch (err) {
+      /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
+    } catch (_: unknown) {
       throw new Error('Invalid token');
     }
 
@@ -55,12 +56,12 @@ export class DecipherToken extends AbstractBaseClass {
    * @param {CipherKey} [key]
    * @returns {string}
    */
-  decipher(cipherObject: CipherEncryptionObject, key?: any): string {
+  decipher(cipherObject: CipherEncryptionObject, key?: CipherKey): string {
     key = key || this.key;
 
     const decipher: DecipherGCM = createDecipheriv(
       this.config.cipherAlgorithm,
-      key,
+      key!,
       cipherObject.salt
     );
 
