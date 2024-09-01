@@ -27,7 +27,7 @@ export abstract class AbstractBaseClass {
    */
   constructor(newConfig?: CipherTokenConfig) {
     this.config = newConfig
-      ? { ...newConfig, ...DEFAULT_CT_CONFIG }
+      ? { ...DEFAULT_CT_CONFIG, ...newConfig }
       : DEFAULT_CT_CONFIG;
   }
 
