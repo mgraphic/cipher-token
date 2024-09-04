@@ -26,8 +26,13 @@ describe('functions', () => {
     expect(decipherToken).toHaveProperty('decipher');
   });
 
-  it('should generate random key', () => {
+  it('should generate a 32 bit random key', () => {
     const key = generateRandomString();
     expect(key).toHaveLength(64);
+  });
+
+  it('should generate 8 bit random key', () => {
+    const key = generateRandomString(8);
+    expect(key).toHaveLength(16);
   });
 });

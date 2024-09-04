@@ -39,7 +39,7 @@ AbstractBaseClass
 
 #### Defined in
 
-[\_base.ts:28](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/_base.ts#L28)
+[\_base.ts:28](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L28)
 
 ## Properties
 
@@ -55,7 +55,7 @@ Config object
 
 #### Defined in
 
-[\_base.ts:14](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/_base.ts#L14)
+[\_base.ts:14](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L14)
 
 ***
 
@@ -71,7 +71,7 @@ Key
 
 #### Defined in
 
-[\_base.ts:20](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/_base.ts#L20)
+[\_base.ts:20](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L20)
 
 ## Methods
 
@@ -93,7 +93,7 @@ Decipher data
 
 #### Defined in
 
-[decipher.ts:59](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/decipher.ts#L59)
+[decipher.ts:59](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/decipher.ts#L59)
 
 ***
 
@@ -121,7 +121,7 @@ AbstractBaseClass
 
 #### Defined in
 
-[\_base.ts:87](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/_base.ts#L87)
+[\_base.ts:87](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L87)
 
 ***
 
@@ -149,7 +149,7 @@ AbstractBaseClass
 
 #### Defined in
 
-[\_base.ts:40](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/_base.ts#L40)
+[\_base.ts:40](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L40)
 
 ***
 
@@ -177,7 +177,7 @@ AbstractBaseClass
 
 #### Defined in
 
-[\_base.ts:64](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/_base.ts#L64)
+[\_base.ts:64](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L64)
 
 ***
 
@@ -205,7 +205,7 @@ AbstractBaseClass
 
 #### Defined in
 
-[\_base.ts:52](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/_base.ts#L52)
+[\_base.ts:52](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L52)
 
 ***
 
@@ -227,4 +227,4 @@ Untokenize token
 
 #### Defined in
 
-[decipher.ts:17](https://github.com/mgraphic/cipher-token/blob/6ab4a04a2f8507b6bcf0aa89603c3ca7bcb3b225/src/decipher.ts#L17)
+[decipher.ts:17](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/decipher.ts#L17)

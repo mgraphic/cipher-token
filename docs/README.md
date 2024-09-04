@@ -15,12 +15,12 @@
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://github.com/mgraphic/cipher-token/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg" />
   </a>
   <br />
   <br />
 
-**Link to the full [API Documentation](_media/globals.md)**
+**Link to the full [API Documentation](docs/globals.md)**
 
 </div>
 
@@ -32,7 +32,80 @@
 npm install @mgraphic/cipher-token
 ```
 
-## Examples
+## CLI Tool
+
+```bash
+npx @mgraphic/cipher-token
+```
+
+_Results In..._
+
+![CLI Example](https://raw.githubusercontent.com/mgraphic/cipher-token/main/cli-example.png)
+
+You can either use the prompt interaction to create a token, decipher a token, or generate a random string to be used for a key.
+
+**tokenize**
+
+```bash
+npx @mgraphic/cipher-token tokenize --key=<secret key> [flags...] <plainText>
+```
+
+Arguments
+|ARGUMENT|DESCRIPTION|TYPE|REQUIRED|
+|-|-|-|-|
+|`plainText`|Plain text to tokenize|string|yes|
+
+Options
+|FLAG|ALIAS|DESCRIPTION|TYPE|DEFAULT|REQUIRED|
+|-|-|-|-|-|-|
+|`--cipher-algorithm`|`-a`|Cipher Algorithm|string|`aes-256-gcm`|false|
+|`--encryption-encoding`|`-e`|Encryption Encoding|string|`hex`|false|
+|`--hash-algorithm`|`-y`|Hash Algorithm|string|`sha256`|false|
+|`--key`||Secret Key|string||true|
+|`--key-length`|`-k`|Key Length|number|32|false|
+|`--salt-byte-size`|`-b`|Salt Byte Size|number|8|false|
+|`--salt-encoding`|`-s`|Salt Encoding|string|`hex`|false|
+|`--tag-encoding`|`-t`|Tag Encoding|string|`hex`|false|
+|`--text-encoding`|`-x`|Text Encoding|string|`utf8`|false|
+|`--token-encoding`|`-z`|Token Encoding|string|`base64`|false|
+
+**untokenize**
+
+```bash
+npx @mgraphic/cipher-token tokenize --key=<secret key> [flags...] <token>
+```
+
+Arguments
+|ARGUMENT|DESCRIPTION|TYPE|REQUIRED|
+|-|-|-|-|
+|`token`|Token string to decipher|string|yes|
+
+Options
+|FLAG|ALIAS|DESCRIPTION|TYPE|DEFAULT|REQUIRED|
+|-|-|-|-|-|-|
+|`--cipher-algorithm`|`-a`|Cipher Algorithm|string|`aes-256-gcm`|false|
+|`--encryption-encoding`|`-e`|Encryption Encoding|string|`hex`|false|
+|`--hash-algorithm`|`-y`|Hash Algorithm|string|`sha256`|false|
+|`--key`||Secret Key|string||true|
+|`--key-length`|`-k`|Key Length|number|32|false|
+|`--salt-byte-size`|`-b`|Salt Byte Size|number|8|false|
+|`--salt-encoding`|`-s`|Salt Encoding|string|`hex`|false|
+|`--tag-encoding`|`-t`|Tag Encoding|string|`hex`|false|
+|`--text-encoding`|`-x`|Text Encoding|string|`utf8`|false|
+|`--token-encoding`|`-z`|Token Encoding|string|`base64`|false|
+
+**generate**
+
+```bash
+npx @mgraphic/cipher-token generate [flags...]
+```
+
+Options
+|FLAG|ALIAS|DESCRIPTION|TYPE|DEFAULT|REQUIRED|
+|-|-|-|-|-|-|
+|`--byte-size`|`-b`|Byte Size|number|32|false|
+
+## Code Examples
 
 ### Key From String
 

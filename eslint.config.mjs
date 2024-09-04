@@ -6,6 +6,8 @@ export default [
   { files: ['**/*.{js,mjs,cjs,ts}'] },
   {
     ignores: [
+      '.github',
+      'bin',
       'demo',
       'test',
       'dist',
