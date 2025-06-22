@@ -68,7 +68,7 @@ Options
 **untokenize**
 
 ```bash
-npx @mgraphic/cipher-token tokenize --key=<secret key> [flags...] <token>
+npx @mgraphic/cipher-token untokenize --key=<secret key> [flags...] <token>
 ```
 
 Arguments
