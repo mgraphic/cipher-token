@@ -1,4 +1,4 @@
-[**@mgraphic/cipher-token**](../README.md) • **Docs**
+[**@mgraphic/cipher-token**](../README.md)
 
 ***
 
@@ -6,18 +6,18 @@
 
 # Function: generateRandomString()
 
-> **generateRandomString**(`byteSize`?): `string`
+> **generateRandomString**(`byteSize?`): `string`
+
+Defined in: [functions.ts:29](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/functions.ts#L29)
 
 Generate random string
 
 ## Parameters
 
-• **byteSize?**: `number` = `32`
+### byteSize?
+
+`number` = `32`
 
 ## Returns
 
 `string`
-
-## Defined in
-
-[functions.ts:29](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/functions.ts#L29)

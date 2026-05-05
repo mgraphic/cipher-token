@@ -1,4 +1,4 @@
-[**@mgraphic/cipher-token**](../README.md) • **Docs**
+[**@mgraphic/cipher-token**](../README.md)
 
 ***
 
@@ -8,6 +8,4 @@
 
 > `const` **DEFAULT\_CT\_CONFIG**: [`CipherTokenConfig`](../classes/CipherTokenConfig.md)
 
-## Defined in
-
-[model.ts:30](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/model.ts#L30)
+Defined in: [model.ts:30](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/model.ts#L30)

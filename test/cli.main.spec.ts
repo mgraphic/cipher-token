@@ -1,5 +1,11 @@
 const mockCli = jest.fn();
 
+jest.mock('@inquirer/prompts', () => ({
+  input: jest.fn(),
+  password: jest.fn(),
+  select: jest.fn(),
+}));
+
 jest.mock('cleye', () => {
   const actualModule = jest.requireActual('cleye');
   return {
@@ -101,7 +107,7 @@ describe('@mgraphic/cipher-token CLI', () => {
 
         expect(spy).toHaveBeenCalledWith(expect.any(String));
         expect(spy.mock.calls[0][0]).toEqual(
-          'This is a deciphered text string'
+          'This is a deciphered text string',
         );
       });
 
@@ -168,7 +174,7 @@ describe('@mgraphic/cipher-token CLI', () => {
 
         expect(spy).toHaveBeenCalledWith(expect.any(String));
         expect(spy.mock.calls[0][0]).toEqual(
-          'This is a deciphered text string'
+          'This is a deciphered text string',
         );
       });
 
@@ -189,7 +195,7 @@ describe('@mgraphic/cipher-token CLI', () => {
         main();
 
         expect(spy.mock.calls[0][0]).toEqual(
-          'The required key was not provided, please pass in a key as a --key flag'
+          'The required key was not provided, please pass in a key as a --key flag',
         );
       });
 
@@ -210,7 +216,7 @@ describe('@mgraphic/cipher-token CLI', () => {
         main();
 
         expect(spy.mock.calls[0][0]).toEqual(
-          'The required key was not provided, please pass in a key as a --key flag'
+          'The required key was not provided, please pass in a key as a --key flag',
         );
       });
     });

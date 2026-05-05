@@ -1,5 +1,5 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} **/
-export default {
+module.exports = {
   preset: 'ts-jest',
   rootDir: './',
   testEnvironment: 'node',
@@ -17,4 +17,5 @@ export default {
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
   coverageReporters: ['json', 'html', 'text', 'text-summary'],
   testMatch: ['<rootDir>/test/**/*.spec.ts'],
+  transformIgnorePatterns: ['node_modules/(?!(@inquirer)/)'],
 };

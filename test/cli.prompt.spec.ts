@@ -2,15 +2,11 @@ const mockInquirerInput = jest.fn();
 const mockInquirerPassword = jest.fn();
 const mockInquirerSelect = jest.fn();
 
-jest.mock('@inquirer/prompts', () => {
-  const actualModule = jest.requireActual('@inquirer/prompts');
-  return {
-    ...actualModule,
-    input: mockInquirerInput,
-    password: mockInquirerPassword,
-    select: mockInquirerSelect,
-  };
-});
+jest.mock('@inquirer/prompts', () => ({
+  input: mockInquirerInput,
+  password: mockInquirerPassword,
+  select: mockInquirerSelect,
+}));
 
 import { runPrompt } from '../src/cli/prompt';
 
@@ -53,7 +49,7 @@ describe('@mgraphic/cipher-token CLI', () => {
         mockInquirerSelect.mockImplementation(async () => 'tokenize');
         mockInquirerPassword.mockImplementation(async () => 'secret key');
         mockInquirerInput.mockImplementation(
-          async () => 'This is a deciphered text string'
+          async () => 'This is a deciphered text string',
         );
 
         const spy = jest
@@ -78,7 +74,7 @@ describe('@mgraphic/cipher-token CLI', () => {
             'ZDIyYmNjZjYwZTVjMmFmMDMxN2MwMmY5OTY3YjBl' +
             'NzQyZGYxMDNlMDA0ODRiODlkIiwic2FsdCI6IjBi' +
             'MjYzNzUxNThkMzdlNTQiLCJ0YWciOiIwZTdlMDc1' +
-            'NDNhZmI2MWY4ZmRkZDc3NTZiYjNjYTNlYyJ9'
+            'NDNhZmI2MWY4ZmRkZDc3NTZiYjNjYTNlYyJ9',
         );
 
         const spy = jest
@@ -92,7 +88,7 @@ describe('@mgraphic/cipher-token CLI', () => {
         expect(mockInquirerInput).toHaveBeenCalledTimes(1);
         expect(spy).toHaveBeenCalledWith(expect.any(String));
         expect(spy.mock.calls[0][0]).toEqual(
-          'This is a deciphered text string'
+          'This is a deciphered text string',
         );
       });
 
@@ -100,7 +96,7 @@ describe('@mgraphic/cipher-token CLI', () => {
         mockInquirerSelect.mockImplementation(async () => 'tokenize');
         // mockInquirerPassword.mockImplementation(async () => 'secret key');
         mockInquirerInput.mockImplementation(
-          async () => 'This is a deciphered text string'
+          async () => 'This is a deciphered text string',
         );
 
         const spy = jest
@@ -137,7 +133,7 @@ describe('@mgraphic/cipher-token CLI', () => {
             '2273616c74223a22317a365357497735616d5848' +
             '6e51455847662f6e61773d3d222c22746167223a' +
             '2257456541787955537944784e42414558673942' +
-            '2f6e673d3d227d'
+            '2f6e673d3d227d',
         );
 
         const spy = jest
@@ -162,7 +158,7 @@ describe('@mgraphic/cipher-token CLI', () => {
         expect(mockInquirerInput).toHaveBeenCalledTimes(1);
         expect(spy).toHaveBeenCalledWith(expect.any(String));
         expect(spy.mock.calls[0][0]).toEqual(
-          'This is a deciphered text string'
+          'This is a deciphered text string',
         );
       });
     });

@@ -1,10 +1,12 @@
-[**@mgraphic/cipher-token**](../README.md) • **Docs**
+[**@mgraphic/cipher-token**](../README.md)
 
 ***
 
 [@mgraphic/cipher-token](../globals.md) / DecipherToken
 
 # Class: DecipherToken
+
+Defined in: [decipher.ts:10](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/decipher.ts#L10)
 
 Decipher token
  DecipherToken
@@ -15,19 +17,23 @@ Decipher token
 
 ## Constructors
 
-### new DecipherToken()
+### Constructor
 
-> **new DecipherToken**(`newConfig`?): [`DecipherToken`](DecipherToken.md)
+> **new DecipherToken**(`newConfig?`): `DecipherToken`
+
+Defined in: [\_base.ts:28](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L28)
 
 Creates an instance of AbstractBaseClass.
 
 #### Parameters
 
-• **newConfig?**: [`CipherTokenConfig`](CipherTokenConfig.md)
+##### newConfig?
+
+[`CipherTokenConfig`](CipherTokenConfig.md)
 
 #### Returns
 
-[`DecipherToken`](DecipherToken.md)
+`DecipherToken`
 
 #### Memberof
 
@@ -37,15 +43,13 @@ AbstractBaseClass
 
 `AbstractBaseClass.constructor`
 
-#### Defined in
-
-[\_base.ts:28](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L28)
-
 ## Properties
 
 ### config
 
 > `protected` **config**: [`CipherTokenConfig`](CipherTokenConfig.md)
+
+Defined in: [\_base.ts:14](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L14)
 
 Config object
 
@@ -53,15 +57,13 @@ Config object
 
 `AbstractBaseClass.config`
 
-#### Defined in
-
-[\_base.ts:14](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L14)
-
 ***
 
 ### key?
 
-> `protected` `optional` **key**: `CipherKey`
+> `protected` `optional` **key?**: `CipherKey`
+
+Defined in: [\_base.ts:20](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L20)
 
 Key
 
@@ -69,31 +71,29 @@ Key
 
 `AbstractBaseClass.key`
 
-#### Defined in
-
-[\_base.ts:20](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L20)
-
 ## Methods
 
 ### decipher()
 
-> **decipher**(`cipherObject`, `key`?): `string`
+> **decipher**(`cipherObject`, `key?`): `string`
+
+Defined in: [decipher.ts:59](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/decipher.ts#L59)
 
 Decipher data
 
 #### Parameters
 
-• **cipherObject**: [`CipherEncryptionObject`](../type-aliases/CipherEncryptionObject.md)
+##### cipherObject
 
-• **key?**: `CipherKey`
+[`CipherEncryptionObject`](../type-aliases/CipherEncryptionObject.md)
+
+##### key?
+
+`CipherKey`
 
 #### Returns
 
 `string`
-
-#### Defined in
-
-[decipher.ts:59](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/decipher.ts#L59)
 
 ***
 
@@ -101,11 +101,15 @@ Decipher data
 
 > **keyFrom**(`source`): `Promise`\<`CipherKey`\>
 
+Defined in: [\_base.ts:87](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L87)
+
 Generate key from object
 
 #### Parameters
 
-• **source**: `RequireAtLeastOne`\<`object`\>
+##### source
+
+`RequireAtLeastOne`\<\{ `buffer?`: `Buffer`\<`ArrayBufferLike`\>; `file?`: `string`; `text?`: `string`; \}\>
 
 #### Returns
 
@@ -119,21 +123,21 @@ AbstractBaseClass
 
 `AbstractBaseClass.keyFrom`
 
-#### Defined in
-
-[\_base.ts:87](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L87)
-
 ***
 
 ### keyFromBuffer()
 
 > **keyFromBuffer**(`buffer`): `CipherKey`
 
+Defined in: [\_base.ts:40](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L40)
+
 Generate key from buffer
 
 #### Parameters
 
-• **buffer**: `Buffer`
+##### buffer
+
+`Buffer`
 
 #### Returns
 
@@ -147,21 +151,21 @@ AbstractBaseClass
 
 `AbstractBaseClass.keyFromBuffer`
 
-#### Defined in
-
-[\_base.ts:40](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L40)
-
 ***
 
 ### keyFromFile()
 
 > **keyFromFile**(`fileName`): `Promise`\<`CipherKey`\>
 
+Defined in: [\_base.ts:64](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L64)
+
 Generate key from file
 
 #### Parameters
 
-• **fileName**: `string`
+##### fileName
+
+`string`
 
 #### Returns
 
@@ -175,21 +179,21 @@ AbstractBaseClass
 
 `AbstractBaseClass.keyFromFile`
 
-#### Defined in
-
-[\_base.ts:64](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L64)
-
 ***
 
 ### keyFromString()
 
 > **keyFromString**(`secret`): `CipherKey`
 
+Defined in: [\_base.ts:52](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L52)
+
 Generate key from string
 
 #### Parameters
 
-• **secret**: `string`
+##### secret
+
+`string`
 
 #### Returns
 
@@ -203,28 +207,26 @@ AbstractBaseClass
 
 `AbstractBaseClass.keyFromString`
 
-#### Defined in
-
-[\_base.ts:52](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/_base.ts#L52)
-
 ***
 
 ### untokenize()
 
-> **untokenize**(`token`, `key`?): `string`
+> **untokenize**(`token`, `key?`): `string`
+
+Defined in: [decipher.ts:17](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/decipher.ts#L17)
 
 Untokenize token
 
 #### Parameters
 
-• **token**: `string`
+##### token
 
-• **key?**: `CipherKey`
+`string`
+
+##### key?
+
+`CipherKey`
 
 #### Returns
 
 `string`
-
-#### Defined in
-
-[decipher.ts:17](https://github.com/mgraphic/cipher-token/blob/84fd06062d7f61b79d7a8155440ee4cc7cc44b40/src/decipher.ts#L17)
