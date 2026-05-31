@@ -2,6 +2,7 @@
   "name": "@mgraphic/cipher-token",
   "description": "Package to encrypt and decrypt data into a storable string with multiple options to generate a key",
   "version": "0.0.0-semantically-released",
+  "type": "module",
   "main": "./dist/index",
   "bin": {
     "cipher-token": "./dist/cli/cli.js"
@@ -20,7 +21,7 @@
     "url": "git+https://github.com/mgraphic/cipher-token.git"
   },
   "scripts": {
-    "e2e": "ts-node ./e2e.ts",
+    "e2e": "tsx ./e2e.ts",
     "prebuild": "npm run lint && npm run test:coverage && npm run e2e",
     "build": "npm run build:raw",
     "postbuild": "npm run typedoc",
@@ -50,6 +51,7 @@
     "ts-jest": "^29.2.3",
     "ts-node": "^10.9.2",
     "tsup": "^8.2.3",
+    "tsx": "^4.22.4",
     "typedoc": "^0.28.19",
     "typedoc-plugin-markdown": "^4.2.3",
     "typescript": "^5.5.4",

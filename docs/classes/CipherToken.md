@@ -6,7 +6,7 @@
 
 # Class: CipherToken
 
-Defined in: [cipher.ts:10](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/cipher.ts#L10)
+Defined in: [cipher.ts:10](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/cipher.ts#L10)
 
 Cipher token
  CipherToken
@@ -21,7 +21,7 @@ Cipher token
 
 > **new CipherToken**(`newConfig?`): `CipherToken`
 
-Defined in: [\_base.ts:28](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L28)
+Defined in: [\_base.ts:29](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/_base.ts#L29)
 
 Creates an instance of AbstractBaseClass.
 
@@ -49,7 +49,7 @@ AbstractBaseClass
 
 > `protected` **config**: [`CipherTokenConfig`](CipherTokenConfig.md)
 
-Defined in: [\_base.ts:14](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L14)
+Defined in: [\_base.ts:15](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/_base.ts#L15)
 
 Config object
 
@@ -63,7 +63,7 @@ Config object
 
 > `protected` `optional` **key?**: `CipherKey`
 
-Defined in: [\_base.ts:20](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L20)
+Defined in: [\_base.ts:21](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/_base.ts#L21)
 
 Key
 
@@ -77,7 +77,7 @@ Key
 
 > **cipher**(`data`, `key?`): [`CipherEncryptionObject`](../type-aliases/CipherEncryptionObject.md)
 
-Defined in: [cipher.ts:32](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/cipher.ts#L32)
+Defined in: [cipher.ts:32](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/cipher.ts#L32)
 
 Cipher data
 
@@ -101,7 +101,7 @@ Cipher data
 
 > **keyFrom**(`source`): `Promise`\<`CipherKey`\>
 
-Defined in: [\_base.ts:87](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L87)
+Defined in: [\_base.ts:88](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/_base.ts#L88)
 
 Generate key from object
 
@@ -129,7 +129,7 @@ AbstractBaseClass
 
 > **keyFromBuffer**(`buffer`): `CipherKey`
 
-Defined in: [\_base.ts:40](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L40)
+Defined in: [\_base.ts:41](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/_base.ts#L41)
 
 Generate key from buffer
 
@@ -157,7 +157,7 @@ AbstractBaseClass
 
 > **keyFromFile**(`fileName`): `Promise`\<`CipherKey`\>
 
-Defined in: [\_base.ts:64](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L64)
+Defined in: [\_base.ts:65](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/_base.ts#L65)
 
 Generate key from file
 
@@ -185,7 +185,7 @@ AbstractBaseClass
 
 > **keyFromString**(`secret`): `CipherKey`
 
-Defined in: [\_base.ts:52](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/_base.ts#L52)
+Defined in: [\_base.ts:53](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/_base.ts#L53)
 
 Generate key from string
 
@@ -213,7 +213,7 @@ AbstractBaseClass
 
 > **tokenize**(`data`, `key?`): `string`
 
-Defined in: [cipher.ts:17](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/cipher.ts#L17)
+Defined in: [cipher.ts:17](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/cipher.ts#L17)
 
 Generate token
 

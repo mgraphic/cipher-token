@@ -8,7 +8,7 @@
 
 > **CipherEncryptionObject** = `object`
 
-Defined in: [model.ts:22](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/model.ts#L22)
+Defined in: [model.ts:22](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/model.ts#L22)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [model.ts:22](https://github.com/mgraphic/cipher-token/blob/375453b5
 
 > **encrypted**: `string`
 
-Defined in: [model.ts:23](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/model.ts#L23)
+Defined in: [model.ts:23](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/model.ts#L23)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [model.ts:23](https://github.com/mgraphic/cipher-token/blob/375453b5
 
 > **salt**: `string`
 
-Defined in: [model.ts:24](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/model.ts#L24)
+Defined in: [model.ts:24](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/model.ts#L24)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [model.ts:24](https://github.com/mgraphic/cipher-token/blob/375453b5
 
 > **tag**: `string`
 
-Defined in: [model.ts:25](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/model.ts#L25)
+Defined in: [model.ts:25](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/model.ts#L25)

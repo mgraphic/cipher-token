@@ -1,4 +1,5 @@
 import { BinaryLike, createHash, scryptSync } from 'crypto';
+import { createReadStream } from 'fs';
 import { RequireAtLeastOne } from './_utils';
 import { CipherTokenConfig } from './config';
 import { CipherKey, DEFAULT_CT_CONFIG } from './model';
@@ -63,7 +64,7 @@ export abstract class AbstractBaseClass {
    */
   async keyFromFile(fileName: string): Promise<CipherKey> {
     /* eslint-disable-next-line @typescript-eslint/no-require-imports */
-    const rs = await require('fs').createReadStream(fileName);
+    const rs = createReadStream(fileName);
     const hash = createHash(this.config.hashAlgorithm);
 
     return new Promise((resolve, reject) => {
@@ -85,7 +86,11 @@ export abstract class AbstractBaseClass {
    * @memberof AbstractBaseClass
    */
   async keyFrom(
-    source: RequireAtLeastOne<{ buffer?: Buffer; file?: string; text?: string }>
+    source: RequireAtLeastOne<{
+      buffer?: Buffer;
+      file?: string;
+      text?: string;
+    }>,
   ): Promise<CipherKey> {
     const { buffer, file, text } = source;
     const hash = createHash(this.config.hashAlgorithm);
@@ -99,13 +104,12 @@ export abstract class AbstractBaseClass {
     }
 
     if (file) {
-      /* eslint-disable-next-line @typescript-eslint/no-require-imports */
-      const rs = await require('fs').createReadStream(file);
+      const rs = createReadStream(file);
 
       await new Promise((resolve, reject) => {
         rs.on('error', reject);
         rs.on('data', (chunk: BinaryLike) => hash.update(chunk));
-        rs.on('end', resolve);
+        rs.on('end', () => resolve(undefined));
       });
     }
 

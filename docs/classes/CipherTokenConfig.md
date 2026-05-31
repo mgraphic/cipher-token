@@ -6,7 +6,7 @@
 
 # Class: CipherTokenConfig
 
-Defined in: [config.ts:4](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/config.ts#L4)
+Defined in: [config.ts:4](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/config.ts#L4)
 
 ## Constructors
 
@@ -24,7 +24,7 @@ Defined in: [config.ts:4](https://github.com/mgraphic/cipher-token/blob/375453b5
 
 > **cipherAlgorithm**: `CipherGCMTypes` = `'aes-256-gcm'`
 
-Defined in: [config.ts:11](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/config.ts#L11)
+Defined in: [config.ts:11](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/config.ts#L11)
 
 The cipher algorithm to use to encrypt/decrypt the token.
 
@@ -40,7 +40,7 @@ The cipher algorithm to use to encrypt/decrypt the token.
 
 > **encryptionEncoding**: `Encoding` = `'hex'`
 
-Defined in: [config.ts:25](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/config.ts#L25)
+Defined in: [config.ts:25](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/config.ts#L25)
 
 The encoding to use for encryption.
 
@@ -56,7 +56,7 @@ The encoding to use for encryption.
 
 > **hashAlgorithm**: `string` = `'sha256'`
 
-Defined in: [config.ts:17](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/config.ts#L17)
+Defined in: [config.ts:17](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/config.ts#L17)
 
 The hash algorithm to use to generate the key.
 
@@ -72,7 +72,7 @@ The hash algorithm to use to generate the key.
 
 > **keyLength**: `number` = `32`
 
-Defined in: [config.ts:57](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/config.ts#L57)
+Defined in: [config.ts:57](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/config.ts#L57)
 
 The length of the key in bytes.
 
@@ -88,7 +88,7 @@ The length of the key in bytes.
 
 > **saltByteSize**: `number` = `8`
 
-Defined in: [config.ts:63](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/config.ts#L63)
+Defined in: [config.ts:63](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/config.ts#L63)
 
 The length of the salt in bytes.
 
@@ -104,7 +104,7 @@ The length of the salt in bytes.
 
 > **saltEncoding**: `BufferEncoding` = `'hex'`
 
-Defined in: [config.ts:31](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/config.ts#L31)
+Defined in: [config.ts:31](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/config.ts#L31)
 
 The encoding to use for the salt.
 
@@ -120,7 +120,7 @@ The encoding to use for the salt.
 
 > **tagEncoding**: `BufferEncoding` = `'hex'`
 
-Defined in: [config.ts:37](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/config.ts#L37)
+Defined in: [config.ts:37](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/config.ts#L37)
 
 The encoding to use for the tag.
 
@@ -136,7 +136,7 @@ The encoding to use for the tag.
 
 > **textEncoding**: `BufferEncoding` = `'utf8'`
 
-Defined in: [config.ts:43](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/config.ts#L43)
+Defined in: [config.ts:43](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/config.ts#L43)
 
 The encoding to use for plaintext.
 
@@ -152,7 +152,7 @@ The encoding to use for plaintext.
 
 > **tokenEncoding**: `BufferEncoding` = `'base64'`
 
-Defined in: [config.ts:49](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/config.ts#L49)
+Defined in: [config.ts:49](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/config.ts#L49)
 
 The encoding to use for the token.
 

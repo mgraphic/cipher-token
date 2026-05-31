@@ -8,7 +8,7 @@
 /.cipher-token-logo.png
 /demo
 /e2e.ts
-/jest.config.js
+/jest.config.cjs
 /package-lock.json
 /README.md
 /src

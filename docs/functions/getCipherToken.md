@@ -8,7 +8,7 @@
 
 > **getCipherToken**(`newConfig?`): [`CipherToken`](../classes/CipherToken.md)
 
-Defined in: [functions.ts:11](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/functions.ts#L11)
+Defined in: [functions.ts:11](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/functions.ts#L11)
 
 Get cipher token class
 

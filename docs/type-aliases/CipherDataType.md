@@ -8,4 +8,4 @@
 
 > **CipherDataType** = `string` \| `BinaryLike` \| `Buffer` \| `DataView` \| `TypedArray`
 
-Defined in: [model.ts:15](https://github.com/mgraphic/cipher-token/blob/375453b53fb7163b65cab0330ec38bb7e5e07f57/src/model.ts#L15)
+Defined in: [model.ts:15](https://github.com/mgraphic/cipher-token/blob/2f4dfcb531fd02694f60801c83da26160ecba2a4/src/model.ts#L15)
