@@ -62,7 +62,7 @@
     "picomatch": "^4.0.4",
     "ts-jest": "^29.2.3",
     "ts-node": "^10.9.2",
-    "tsup": "^8.2.3",
+    "tsup": "^9.0.0",
     "tsx": "^4.22.4",
     "typedoc": "^0.28.19",
     "typedoc-plugin-markdown": "^4.2.3",
